@@ -220,11 +220,19 @@ with companies seeking to bolster IT team
                     child: ElevatedButton(
                       style: ElevatedButton.styleFrom(
                           shape: RoundedRectangleBorder(
+                            side: BorderSide(
+                              color: primaryColor,
+                              width: 1
+                            ),
                             borderRadius:
                                 BorderRadius.all(Radius.elliptical(5, 5)),
                           ),
-                          backgroundColor: primaryColor),
-                      onPressed: () {},
+                          backgroundColor: Color.fromRGBO(255, 255, 255, 1)),
+
+                          
+                      onPressed: () {
+                        Navigator.pushNamed(context, '/websignup');
+                      },
                       child: Text(
                         'Get Started',
                         style: TextStyle(
@@ -232,7 +240,7 @@ with companies seeking to bolster IT team
                             fontSize: 15,
                             fontWeight: FontWeight.normal,
                             letterSpacing: 0,
-                            color: Colors.white),
+                            color: primaryColor),
                       ),
                     ),
                   ),
@@ -265,7 +273,7 @@ with companies seeking to bolster IT team
               ),
 //hero section of page2
               Row(
-                crossAxisAlignment: CrossAxisAlignment.end,
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
 //spacing
                   SizedBox(
@@ -289,7 +297,7 @@ with companies seeking to bolster IT team
 
 //headers
                   Column(
-                    crossAxisAlignment: CrossAxisAlignment.end,
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       //row for the first line of text
 
@@ -372,20 +380,20 @@ SizedBox(height: 20,),
               Row(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
-                  Container(
+                 Container(
                     width: 200,
                     height: 40,
                     child: ElevatedButton(
-                      onHover: (value) {
-                        ElevatedButton.styleFrom(backgroundColor: Colors.white);
-                      },
                       style: ElevatedButton.styleFrom(
-                        shape: RoundedRectangleBorder(
-                          borderRadius:
-                              BorderRadius.all(Radius.elliptical(5, 5)),
-                        ),
-                        backgroundColor: primaryColor,
-                      ),
+                          shape: RoundedRectangleBorder(
+                            side: BorderSide(
+                              color: primaryColor,
+                              width: 1
+                            ),
+                            borderRadius:
+                                BorderRadius.all(Radius.elliptical(5, 5)),
+                          ),
+                          backgroundColor: Color.fromRGBO(255, 255, 255, 1)),
                       onPressed: () {},
                       child: Text(
                         'Learn More',
@@ -394,7 +402,7 @@ SizedBox(height: 20,),
                             fontSize: 15,
                             fontWeight: FontWeight.normal,
                             letterSpacing: 0,
-                            color: Colors.white),
+                            color: primaryColor),
                       ),
                     ),
                   ),
@@ -422,6 +430,10 @@ SizedBox(height: 20,),
                             color: Colors.white),
                       ),
                     ),
+                  ),
+
+                   SizedBox(
+                    width: 140,
                   ),
                 ],
               ),
@@ -571,16 +583,20 @@ SizedBox(height: 20),
                   SizedBox(
                     width: 10,
                   ),
-                  Container(
+                 Container(
                     width: 200,
                     height: 40,
                     child: ElevatedButton(
                       style: ElevatedButton.styleFrom(
                           shape: RoundedRectangleBorder(
+                            side: BorderSide(
+                              color: primaryColor,
+                              width: 1
+                            ),
                             borderRadius:
                                 BorderRadius.all(Radius.elliptical(5, 5)),
                           ),
-                          backgroundColor: primaryColor),
+                          backgroundColor: Color.fromRGBO(255, 255, 255, 1)),
                       onPressed: () {},
                       child: Text(
                         'Get Started',
@@ -589,7 +605,7 @@ SizedBox(height: 20),
                             fontSize: 15,
                             fontWeight: FontWeight.normal,
                             letterSpacing: 0,
-                            color: Colors.white),
+                            color: primaryColor),
                       ),
                     ),
                   ),
@@ -603,8 +619,7 @@ SizedBox(height: 100),
 //title4
 
 Text(
-                '''Manage All your Projects with our 
-Project Management App''',
+                '''Manage All your Projects on our Platform ''',
                 style: TextStyle(
                     fontFamily: 'poppings',
                     fontSize: 40,
@@ -614,7 +629,7 @@ Project Management App''',
               ),
 
 
-
+//hero section of page4
                  Row(
                 crossAxisAlignment: CrossAxisAlignment.end,
                 children: [
@@ -629,75 +644,50 @@ Project Management App''',
                       Container(
                           height: 400,
                           width: 600,
-                          child: Image.asset('illustrations/interview.png')),
+                          child: Image.asset('images/app.png')),
                     ],
                   ),
 
  //spacing between the boxes
                   SizedBox(
-                    width: 80,
+                    width: 50,
                   ),
 
 //headers
                   Column(
-                    crossAxisAlignment: CrossAxisAlignment.end,
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       //row for the first line of text
-
+Text(
+                            '''
+Manage your Projects''',
+                            style: TextStyle(
+                                fontFamily: 'poppings',
+                                fontSize: 40,
+                                fontWeight: FontWeight.w600,
+                                letterSpacing: -2,
+                                color: primaryColor),
+                          ),
+                     
                       Text(
-                        '''Streamline Your Hiring Process''',
+                        '''on our Platform with our Project
+Management Software''',
                         style: TextStyle(
-                            fontFamily: 'poppings',
-                            fontSize: 40,
+                            fontFamily: 'Outfit',
+                            fontSize: 45,
                             fontWeight: FontWeight.w600,
                             letterSpacing: -2,
                             color: Colors.black),
                       ),
                       Row(
-                        mainAxisAlignment: MainAxisAlignment.end,
+                        mainAxisAlignment: MainAxisAlignment.start,
                         children: [
-                          Text(
-                            'Connect ',
-                            style: TextStyle(
-                                fontFamily: 'Outfit',
-                                fontSize: 45,
-                                fontWeight: FontWeight.w600,
-                                letterSpacing: -2,
-                                color: primaryColor),
-                          ),
-                          Text(
-                            '''with Technologists''',
-                            style: TextStyle(
-                                fontFamily: 'poppings',
-                                fontSize: 40,
-                                fontWeight: FontWeight.bold,
-                                letterSpacing: -2,
-                                color: Colors.black),
-                          ),
+                          
                         ],
                       ),
-
                       //end of row
 
-                      Text(
-                        'Skills, experience, and preferred ',
-                        style: TextStyle(
-                            fontFamily: 'poppings',
-                            fontSize: 40,
-                            fontWeight: FontWeight.bold,
-                            letterSpacing: -1,
-                            color: Colors.black),
-                      ),
                      
-                     Text(
-                        'Work style.',
-                        style: TextStyle(
-                            fontFamily: 'poppings',
-                            fontSize: 40,
-                            fontWeight: FontWeight.bold,
-                            letterSpacing: -1,
-                            color: Colors.black),
-                      ),
                      
 
                       SizedBox(height: 20),
@@ -720,7 +710,250 @@ with companies seeking to bolster IT team
 
 SizedBox(height: 20,),
 //cta buttons
-              
+
+ Row(
+                mainAxisAlignment: MainAxisAlignment.end,
+                children: [
+                 Container(
+                    width: 200,
+                    height: 40,
+                    child: ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                          shape: RoundedRectangleBorder(
+                            side: BorderSide(
+                              color: primaryColor,
+                              width: 1
+                            ),
+                            borderRadius:
+                                BorderRadius.all(Radius.elliptical(5, 5)),
+                          ),
+                          backgroundColor: Color.fromRGBO(255, 255, 255, 1)),
+                      onPressed: () {},
+                      child: Text(
+                        'Learn More',
+                        style: TextStyle(
+                            fontFamily: 'poppings',
+                            fontSize: 15,
+                            fontWeight: FontWeight.normal,
+                            letterSpacing: 0,
+                            color: primaryColor),
+                      ),
+                    ),
+                  ),
+                  SizedBox(
+                    width: 10,
+                  ),
+                  Container(
+                    width: 200,
+                    height: 40,
+                    child: ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                          shape: RoundedRectangleBorder(
+                            borderRadius:
+                                BorderRadius.all(Radius.elliptical(5, 5)),
+                          ),
+                          backgroundColor: primaryColor),
+                      onPressed: () {},
+                      child: Text(
+                        'Get Started',
+                        style: TextStyle(
+                            fontFamily: 'poppings',
+                            fontSize: 15,
+                            fontWeight: FontWeight.normal,
+                            letterSpacing: 0,
+                            color: Colors.white),
+                      ),
+                    ),
+                  ),
+
+              SizedBox(
+                    width: 170,
+                  ),
+                ],
+              ),         
+
+
+SizedBox(height: 100,),
+
+
+Text(
+                "Are you a Technologist? We've got you Covered",
+                style: TextStyle(
+                    fontFamily: 'poppings',
+                    fontSize: 40,
+                    fontWeight: FontWeight.bold,
+                    letterSpacing: 0,
+                    color: Color.fromRGBO(0, 0, 0, 0.5)),
+              ),
+
+SizedBox(height: 150,),
+
+//hero section page3
+              Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  //spacing
+                  SizedBox(
+                    height: 150,
+                  ),
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      //row for the first line of text
+                      Row(
+                        children: [
+                          Text(
+                            'Connect',
+                            style: TextStyle(
+                                fontFamily: 'Outfit',
+                                fontSize: 45,
+                                fontWeight: FontWeight.w600,
+                                letterSpacing: -2,
+                                color: primaryColor),
+                          ),
+                          Text(
+                            '  With Recruiters and',
+                            style: TextStyle(
+                                fontFamily: 'poppings',
+                                fontSize: 40,
+                                fontWeight: FontWeight.w600,
+                                letterSpacing: -2,
+                                color: Colors.black),
+                          ),
+                        ],
+                      ),
+
+                      //end of row
+
+                      Text(
+                        'get remote & On-Site Offers.',
+                        style: TextStyle(
+                            fontFamily: 'poppings',
+                            fontSize: 40,
+                            fontWeight: FontWeight.normal,
+                            letterSpacing: -1,
+                            color: Colors.black),
+                      ),
+                      
+
+                      SizedBox(height: 20),
+                      Text(
+                        '''An integrated, end-to-end platform to instantly
+ match global technologists 
+with companies seeking to bolster IT team
+ capacity and skill sets. ''',
+                        style: TextStyle(
+                            fontFamily: 'poppings',
+                            fontSize: 20,
+                            fontWeight: FontWeight.normal,
+                            letterSpacing: -1,
+                            color: Color.fromRGBO(0, 0, 0, 0.5)),
+                      ),
+
+
+                     SizedBox(height: 20),
+//cta buttons
+              Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Container(
+                    width: 200,
+                    height: 40,
+                    child: ElevatedButton(
+                      onHover: (value) {
+                        ElevatedButton.styleFrom(backgroundColor: Colors.white);
+                      },
+                      style: ElevatedButton.styleFrom(
+                        shape: RoundedRectangleBorder(
+                          borderRadius:
+                              BorderRadius.all(Radius.elliptical(5, 5)),
+                        ),
+                        backgroundColor: primaryColor,
+                      ),
+                      onPressed: () {},
+                      child: Text(
+                        'Learn More',
+                        style: TextStyle(
+                            fontFamily: 'poppings',
+                            fontSize: 15,
+                            fontWeight: FontWeight.normal,
+                            letterSpacing: 0,
+                            color: Colors.white),
+                      ),
+                    ),
+                  ),
+                  SizedBox(
+                    width: 10,
+                  ),
+                 Container(
+                    width: 200,
+                    height: 40,
+                    child: ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                          shape: RoundedRectangleBorder(
+                            side: BorderSide(
+                              color: primaryColor,
+                              width: 1
+                            ),
+                            borderRadius:
+                                BorderRadius.all(Radius.elliptical(5, 5)),
+                          ),
+                          backgroundColor: Color.fromRGBO(255, 255, 255, 1)),
+                      onPressed: () {},
+                      child: Text(
+                        'Get Started',
+                        style: TextStyle(
+                            fontFamily: 'poppings',
+                            fontSize: 15,
+                            fontWeight: FontWeight.normal,
+                            letterSpacing: 0,
+                            color: primaryColor),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+
+
+                    ],
+                  ),
+
+                  //spacing between the boxes
+                  SizedBox(
+                    width: 80,
+                  ),
+
+                  //image
+                  Column(
+                    children: [
+                      Container(
+                          height: 350,
+                          width: 600,
+                          child: Image.asset('images/developer.png')),
+                    ],
+                  ),
+                ],
+              ),
+
+SizedBox(height: 200),
+
+Container(
+height: 150,
+width: 1500,
+  color: primaryColor,
+  child: Row(
+    children: [
+SizedBox(width: 500),
+      Icon(Icons.facebook_outlined, color: Color.fromRGBO(255, 255, 255, 0.5),),
+      SizedBox(width: 10),
+    Container(
+      height: 50,
+      width: 150,
+      child: Image.asset('images/socials.png'),)
+
+    ],
+  ),
+)
 
             ],
           ),

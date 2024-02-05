@@ -8,6 +8,7 @@ import 'intro/thirdintro.dart';
 import 'onboarding/devsignup.dart';
 import 'onboarding/skillreg.dart';
 import 'webapp/landingpage.dart';
+import 'webapp/registration/websignup.dart';
 
 void main() {
   runApp(const MyApp());
@@ -29,11 +30,11 @@ class MyApp extends StatelessWidget {
      
 debugShowCheckedModeBanner: false,
 
-     initialRoute: '/landingpage',
+     initialRoute: '/',
      routes: {
 
       //mobile
-'/': (context) => FirstIntro(),
+'/intro': (context) => FirstIntro(),
 '/secondintro': (context) => SecondIntro(),
 '/thirdintro': (context) => ThirdIntro(),
 '/gotosignup': (context) => GotoSignUp(),
@@ -42,7 +43,8 @@ debugShowCheckedModeBanner: false,
 '/login':  (context) => Login(),
 
 //web
-'/landingpage': (context) => LandingPage(),
+'/': (context) => LandingPage(),
+'/websignup': (context) =>  WebSignUp()
      },
     );
   }
