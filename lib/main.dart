@@ -8,7 +8,10 @@ import 'intro/thirdintro.dart';
 import 'onboarding/devsignup.dart';
 import 'onboarding/skillreg.dart';
 import 'webapp/landingpage.dart';
-import 'webapp/registration/websignup.dart';
+import 'webapp/reg/developer/websignup.dart';
+import 'webapp/reg/developer/skillset.dart';
+import 'webapp/reg/developer/finalstage.dart';
+import 'webapp/reg/org/signup.dart';
 
 void main() {
   runApp(const MyApp());
@@ -24,13 +27,13 @@ class MyApp extends StatelessWidget {
       
       theme: ThemeData(
        
-        colorScheme: ColorScheme.fromSeed(seedColor: Color.fromRGBO(24, 101, 51, 1)),
+        colorScheme: ColorScheme.fromSeed(seedColor: Color.fromRGBO(24, 101, 51, 1),),
         useMaterial3: true,
       ),
      
 debugShowCheckedModeBanner: false,
 
-     initialRoute: '/',
+     initialRoute: '/devwebsignup',
      routes: {
 
       //mobile
@@ -44,7 +47,11 @@ debugShowCheckedModeBanner: false,
 
 //web
 '/': (context) => LandingPage(),
-'/websignup': (context) =>  WebSignUp()
+'/devwebsignup': (context) =>  WebSignUp(),
+'/orgsignup': (context) => OrgSignUp(),
+'/devskillset': (context) =>  DevSkillSet(),
+'/devfinalstage': (context)=> FinalStage()
+
      },
     );
   }

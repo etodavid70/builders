@@ -1,0 +1,56 @@
+specification of buidersconnect
+
+1. onboarding[developer]
+sign up
+login
+
+Skill registration
+devops
+cloud engineer
+security experts
+AI/ML
+data science/analytics
+product designers
+
+Developers
+stack registration
+
+primary stack/language
+
+secondary stack/language
+
+tetiary stack/language
+
+
+Experience Level
+
+beginner 0-1 year experience
+junior 2years experience
+	|
+	exam/ if he fails exam, after one year
+	active github presence + certifification
+	
+	|
+intermediate 3/4 years experience
+senior       5 years +
+
+
+Primary residence
+Secondary residence
+
+
+
+DASHBOARD
+Personal messaging
+video calls
+
+camps
+primary stack/primary residence
+primary stack/secondary residence
+
+secondary stack/primary residence
+secondary stack/secondary residence
+
+
+
+

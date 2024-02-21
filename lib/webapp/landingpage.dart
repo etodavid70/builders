@@ -231,7 +231,8 @@ with companies seeking to bolster IT team
 
                           
                       onPressed: () {
-                        Navigator.pushNamed(context, '/websignup');
+                        _showDialog(context);
+                        // Navigator.pushNamed(context, '/websignup');
                       },
                       child: Text(
                         'Get Started',
@@ -960,5 +961,44 @@ SizedBox(width: 500),
         ),
       ),
     );
+
+
+
+    
   }
+
+
+  void _showDialog(BuildContext context) {
+  showDialog(
+    context: context,
+    builder: (BuildContext context) {
+      // Return the AlertDialog widget (explained below)
+      return AlertDialog(
+        title: Text('Choose an Option'),
+        // content: Column(
+        //   children: [
+        //     Text('Dialog content'),
+        //   ],
+        // ),
+        actions: [
+          TextButton(
+            onPressed: () {
+              Navigator.pop(context); 
+             Navigator.pushNamed(context, '/devwebsignup');
+            },
+            child: Text('Developer'),
+          ),
+          ElevatedButton(
+            onPressed: () {
+                Navigator.pop(context); 
+             Navigator.pushNamed(context, '/orgsignup');
+            },
+            child: Text('Organization/CTO'),
+          ),
+        ],
+      );
+    },
+  );
+}
+
 }
