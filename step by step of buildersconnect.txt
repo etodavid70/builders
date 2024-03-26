@@ -1,0 +1,67 @@
+build ui for onboarding -------------------------------- done
+build the backend for the onboarding process-------------in progress
+
+this will contain
+full name,
+email,
+phone number
+password
+state(you have to get the state 
+local govt
+primary stack+ primary stack1
+primary stack+ primary stack2(optional)
+secondary stack+secondary stack1
+secondary stack+secondary stack2(optional)
+
+either you use multi-step
+(i must use multi-step because the user must get info from the back end at each stage of the signup,
+or you use a single database and save the data from each page in sharedpref
+
+
+link the ui with the api for onboarding-------------------
+
+build the ui for the dashboard-----------------------------
+
+implement the ui for the dashboard----------------------------
+
+build the backend for login to display the relevant details of the user in the dashboard----------------------------------------------------
+
+THE DASHBOARD
+
+JOIN A CAMPS(4)
+
+create the ui for this
+
+implement the ui
+
+create the backend that will select people from the same local govt
+
+create the backend that will select people from the same state
+
+this will take you to a chat room, like that of iknow
+
+BUILD YOUR DREAM TEAM
+
+he can put out a vacancy
+he can view the details of all applicant
+(ai selects the best fit based on the paid third party assesment) //later
+once he is satisfied, he accepts this candidate
+he candidates gets a notification that he has been accepted,
+(he can also decline the offer)
+
+he will have a page for accepted clients
+
+then he creates his organizational chart
+
+there will be a chat room for this
+
+
+MANAGE YOUR PROJECTS
+
+look at jira
+outline all the task
+designate each task to concerned personnel
+each person submits to the project leader and he approves to move to the next stage
+set a time line
+
+
